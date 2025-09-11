@@ -1,4 +1,4 @@
-/* style.css */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 * {
   box-sizing: border-box;
@@ -12,6 +12,7 @@ body {
   color: #333;
 }
 
+/* ===== Header & Top Bar ===== */
 .container {
   display: flex;
   justify-content: space-between;
@@ -60,11 +61,13 @@ body {
   font-size: 0.9rem;
 }
 
+/* ===== Hero Section ===== */
 .hero {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   background-color: #fff;
 }
 
@@ -80,7 +83,7 @@ body {
 
 .overlay {
   position: absolute;
-  top: 20%;
+  top: 60%;
   left: 10%;
   color: #000;
   background-color: rgba(255,255,255,0.7);
@@ -128,6 +131,7 @@ body {
   border-radius: 25px;
 }
 
+/* ===== Stats Section ===== */
 .stats {
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +142,7 @@ body {
   font-weight: bold;
 }
 
+/* ===== Treatments Section ===== */
 .treatments {
   padding: 2rem;
   text-align: center;
@@ -170,6 +175,7 @@ body {
   margin: 0.5rem 0;
 }
 
+/* ===== Transformations & Testimonials ===== */
 .transformations,
 .testimonials {
   padding: 2rem;
@@ -194,6 +200,7 @@ body {
   border-radius: 10px;
 }
 
+/* ===== Why Choose Us ===== */
 .why-choose {
   padding: 2rem;
   text-align: center;
@@ -213,6 +220,7 @@ body {
   color: #ff7c29;
 }
 
+/* ===== Footer Form (Top Section) ===== */
 .footer-form {
   background: #fff7f2;
   padding: 2rem;
@@ -234,7 +242,7 @@ body {
   width: 200px;
 }
 
-/* SAFETY SECTION */
+/* ===== Safety Section ===== */
 .safety-section {
   padding: 60px 20px;
   background-color: #fff;
@@ -318,7 +326,7 @@ body {
   margin-left: 6px;
 }
 
-/* REVIEWS */
+/* ===== Reviews Section ===== */
 .reviews {
   padding: 60px 20px;
   background-color: #fff7f2;
@@ -361,8 +369,13 @@ body {
 
 .review-card img {
   width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 10px;
+  display: block;
 }
 
 .review-card h4 {
@@ -375,7 +388,7 @@ body {
   color: #333;
 }
 
-/* LOCATIONS */
+/* ===== Locations Section ===== */
 .locations {
   padding: 60px 20px;
   background-color: #fff;
@@ -430,7 +443,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* === PROMO SECTION === */
+/* ===== Promo Section ===== */
 .promo-section {
   background: #fff5ed;
   padding: 40px 20px;
@@ -453,7 +466,7 @@ body {
   flex: 1 1 320px;
 }
 
-/* FORM BOX */
+/* Form Box */
 .form-box form {
   display: flex;
   flex-direction: column;
@@ -477,20 +490,16 @@ body {
   align-items: center;
 }
 
-.consent-text {
-  font-size: 10px;      
-  color: #444;       
-  display: block;       
-  margin-top: 8px;      
-  line-height: 1.4;    
+.consent-text,
+.consent-text1 {
+  font-size: 10px;
+  color: #444;
+  display: block;
+  margin-top: 8px;
+  line-height: 1.4;
 }
 
 .consent-text1 {
-  font-size: 10px;      
-  color: #444;       
-  display: block;       
-  margin-top: 8px;      
-  line-height: 1.4;    
   text-align: center;
 }
 
@@ -499,7 +508,7 @@ body {
   text-decoration: underline;
 }
 
-/* OFFER BOX */
+/* Offer Box */
 .promo-highlight .tagline {
   color: #e96a00;
   font-weight: 600;
@@ -546,7 +555,7 @@ body {
   margin-top: 5px;
 }
 
-/* PLAN BOX */
+/* Plan Box */
 .plan-box ul {
   list-style: disc;
   padding-left: 20px;
@@ -571,21 +580,8 @@ body {
   margin-left: 10px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .promo-wrapper {
-    flex-direction: column;
-  }
-
-  .promo-image-box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .promo-image-box img {
-    width: 100%;
-  }
-  .faq-section {
+/* ===== FAQ Section ===== */
+.faq-section {
   background-color: #fff5ee;
   padding: 50px 20px;
   max-width: 1200px;
@@ -654,7 +650,133 @@ body {
   display: block;
 }
 
+/* ===== Main Footer ===== */
+.main-footer {
+  background-color: #4a2e13;
+  color: #fff;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-connect h4 {
+  color: #ff7c29;
+  margin-bottom: 10px;
+}
+
+.footer-phone {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* === Updated Social Icons (Font Awesome) === */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #4a2e13;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #ff7c29;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  flex: 2 1 600px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+}
+
+.footer-column h4 {
+  color: #ff7c29;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #ff7c29;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #ddd;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom-right a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.footer-bottom-right a:hover {
+  color: #ff7c29;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .promo-wrapper {
+    flex-direction: column;
+  }
+
+  .promo-image-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promo-image-box img {
+    width: 100%;
+  }
+
   .faq-grid {
     flex-direction: column;
   }
@@ -662,66 +784,52 @@ body {
   .faq-column {
     flex: 1 1 100%;
   }
-}
 
-/* Footer Wrapper */
-.footer {
-  background-color: #4a2e13; /* Dark brown like Clove's brand */
-  color: #fff;
-  padding: 40px 20px 20px;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Footer Inner Content Layout */
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Footer Logo */
-.footer-logo {
-  height: 50px; /* Adjust size as needed */
-  width: auto;
-  margin-bottom: 20px;
-}
-
-/* Footer Links (Policy, Terms, Accessibility) */
-.footer-links {
-  margin-bottom: 15px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Bottom Text */
-.footer-text {
-  font-size: 13px;
-  color: #ddd;
-  margin-top: 10px;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-links a {
-    display: block;
-    margin: 8px 0;
+  .footer-container {
+    flex-direction: column;
   }
 
-  .footer-text {
-    font-size: 12px;
-    padding: 0 10px;
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    max-width: 100%;
   }
 }
 
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .btn, 
+  .footer-form input,
+  .form-box input {
+    width: 100%;
+  }
 
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .treatment-boxes .box {
+    width: 100%;
+  }
 }
+
